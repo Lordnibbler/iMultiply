@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		88D347BE2488A09A0039C254 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D347BD2488A09A0039C254 /* main.swift */; };
+		88D347CB2488A7C70039C254 /* iMultiplyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D347CA2488A7C70039C254 /* iMultiplyTests.swift */; };
+		88D347D02488A8110039C254 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D347BD2488A09A0039C254 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,20 @@
 /* Begin PBXFileReference section */
 		88D347BA2488A09A0039C254 /* iMultiply */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iMultiply; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D347BD2488A09A0039C254 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		88D347C82488A7C70039C254 /* iMultiplyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMultiplyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D347CA2488A7C70039C254 /* iMultiplyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMultiplyTests.swift; sourceTree = "<group>"; };
+		88D347CC2488A7C70039C254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		88D347B72488A09A0039C254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D347C52488A7C70039C254 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				88D347BC2488A09A0039C254 /* iMultiply */,
+				88D347C92488A7C70039C254 /* iMultiplyTests */,
 				88D347BB2488A09A0039C254 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				88D347BA2488A09A0039C254 /* iMultiply */,
+				88D347C82488A7C70039C254 /* iMultiplyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +74,15 @@
 				88D347BD2488A09A0039C254 /* main.swift */,
 			);
 			path = iMultiply;
+			sourceTree = "<group>";
+		};
+		88D347C92488A7C70039C254 /* iMultiplyTests */ = {
+			isa = PBXGroup;
+			children = (
+				88D347CA2488A7C70039C254 /* iMultiplyTests.swift */,
+				88D347CC2488A7C70039C254 /* Info.plist */,
+			);
+			path = iMultiplyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +105,23 @@
 			productReference = 88D347BA2488A09A0039C254 /* iMultiply */;
 			productType = "com.apple.product-type.tool";
 		};
+		88D347C72488A7C70039C254 /* iMultiplyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88D347CD2488A7C70039C254 /* Build configuration list for PBXNativeTarget "iMultiplyTests" */;
+			buildPhases = (
+				88D347C42488A7C70039C254 /* Sources */,
+				88D347C52488A7C70039C254 /* Frameworks */,
+				88D347C62488A7C70039C254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMultiplyTests;
+			productName = iMultiplyTests;
+			productReference = 88D347C82488A7C70039C254 /* iMultiplyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +133,9 @@
 				ORGANIZATIONNAME = "Lord Nibbler";
 				TargetAttributes = {
 					88D347B92488A09A0039C254 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					88D347C72488A7C70039C254 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -111,9 +154,20 @@
 			projectRoot = "";
 			targets = (
 				88D347B92488A09A0039C254 /* iMultiply */,
+				88D347C72488A7C70039C254 /* iMultiplyTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88D347C62488A7C70039C254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88D347B62488A09A0039C254 /* Sources */ = {
@@ -121,6 +175,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D347BE2488A09A0039C254 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D347C42488A7C70039C254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D347D02488A8110039C254 /* main.swift in Sources */,
+				88D347CB2488A7C70039C254 /* iMultiplyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +325,42 @@
 			};
 			name = Release;
 		};
+		88D347CE2488A7C70039C254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EVQESTNE55;
+				INFOPLIST_FILE = iMultiplyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.radler.iMultiplyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		88D347CF2488A7C70039C254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EVQESTNE55;
+				INFOPLIST_FILE = iMultiplyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.radler.iMultiplyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -279,6 +378,15 @@
 			buildConfigurations = (
 				88D347C22488A09A0039C254 /* Debug */,
 				88D347C32488A09A0039C254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88D347CD2488A7C70039C254 /* Build configuration list for PBXNativeTarget "iMultiplyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D347CE2488A7C70039C254 /* Debug */,
+				88D347CF2488A7C70039C254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
